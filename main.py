@@ -9,7 +9,7 @@ def getIndex():
 
 @app.route("/home")
 def home():
-  return render_template('home.html')
+  return render_template('home.html', active_page='home')
 
 @app.route("/about")
 def getAbout():
@@ -20,4 +20,4 @@ def contact():
   return render_template('contact.html', phone = 897654321)
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', threaded=True, port=8020, debug=True)
+  app.run(host='0.0.0.0', threaded=True, port=5000, debug=True)
