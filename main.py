@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -20,9 +20,9 @@ def contact():
   return render_template('contact.html', phone = 897654321)
 
 
-@app.route('post')
+@app.route('/post', methods=['POST'])
 def post():
-  return request.args
+  return request.get_json()
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', threaded=True, port=5000, debug=True)
