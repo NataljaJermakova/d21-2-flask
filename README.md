@@ -1,4 +1,8 @@
-README.md
 # Flask intro project
-Mans web projects.
-kk;
+### My first web project with back-end.
+
+- Super
+- Pupep
+- Project
+
+:smile:
