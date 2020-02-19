@@ -1,6 +1,13 @@
-p {
-  color: green;
-  font-size: 20px;
+.saraksts{
+  height: 400px;
+  background-color: navajowhite;
+}
+h1{
+  padding: 20px;
+  background-color: grey;
 }
 
-.active > a{color: red;}
+.text-box{
+  padding: 20px;
+  background-color: bisque;
+}

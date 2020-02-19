@@ -1,8 +1,8 @@
 # Flask intro project
-### My first web project with back-end.
+### My first web project with back-end
 
 - Super
-- Pupep
+- Puper
 - Project
 
 :smile:

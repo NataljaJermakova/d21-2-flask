@@ -1,28 +1,36 @@
-from flask import Flask, render_template, request
+from flask import Flask, json, jsonify, render_template, request
 
-app = Flask(__name__)
+app = Flask('app')
 
-@app.route("/")
-@app.route("/index")
-def getIndex():
-  return "<h1><a href='/about'>Hi!</a></h1>"
-
-@app.route("/home")
-def home():
-  return render_template('home.html', active_page='home')
-
-@app.route("/about")
-def getAbout():
-  return render_template('about.html')
-
-@app.route("/contact")
-def contact():
-  return render_template('contact.html', phone = 897654321)
+@app.route('/')
+def index_lapa():
+  return render_template('chats.html')
 
 
-@app.route('/post', methods=['POST'])
-def post():
-  return request.get_json()
+@app.route('/check')
+def your_check():
+  return render_template('check.html')
+
+
+@app.route('/chats/lasi')
+def ielasit_chatu():
+  chata_rindas = []
+  with open("chats.txt", "r", encoding="UTF-8") as f:
+    for rinda in f:
+      chata_rindas.append(rinda)
+  return jsonify({"chats": chata_rindas})
+
+
+@app.route('/chats/suuti', methods=['POST'])
+def suutiit_zinju():
+  dati = request.json
+  
+  with open("chats.txt", "a", newline="", encoding="UTF-8") as f:
+    f.write(dati["chats"] + "\n")
+
+  return ielasit_chatu()
+  
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', threaded=True, port=5000, debug=True)
+    # Threaded option to enable multiple instances for multiple user access support
+    app.run(threaded=True, port=5000)
