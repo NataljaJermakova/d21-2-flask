@@ -1,0 +1,32 @@
+body{
+	background: #cccccc no-repeat;
+	background-image: linear-gradient(beige, beige, rgb(251, 197, 117));
+}
+
+.saraksts{
+  height: 600px;
+  background-color: rgba(239, 229, 214, 0.7);
+  margin: 20px 0 10px 0;
+  padding: 30px;
+  line-height: 25px;
+  overflow: auto;
+  word-wrap: break-word;
+}
+h1{
+  padding: 20px;
+  background-color: rgba(251, 197, 117, 0.7);
+  color: rgb(99, 63, 50);
+}
+
+.text-box{
+  padding: 20px;
+  background-color: rgba(251, 237, 217, 0.6);
+}
+.check{
+  text-align: center;
+  margin-top: 25%;
+}
+.btn{
+  background-color: rgb(99, 63, 50);
+  border-color: rgb(99, 63, 50);
+}
