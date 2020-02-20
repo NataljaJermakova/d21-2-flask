@@ -4,8 +4,8 @@ body{
 }
 
 .saraksts{
-  height: 600px;
-  background-color: rgba(239, 229, 214, 0.7);
+  height: 500px;
+  background-color: rgba(239, 229, 214, 0.4);
   margin: 20px 0 10px 0;
   padding: 30px;
   line-height: 25px;
@@ -23,8 +23,10 @@ h1{
   background-color: rgba(251, 237, 217, 0.6);
 }
 .check{
-  text-align: center;
-  margin-top: 25%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .btn{
   background-color: rgb(99, 63, 50);
