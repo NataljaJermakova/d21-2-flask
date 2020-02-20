@@ -1,6 +1,16 @@
+html{
+	background: #cccccc no-repeat;
+	background-image: linear-gradient(beige, beige, #b6c9c2);
+}
+
 .saraksts{
-  height: 400px;
-  background-color: navajowhite;
+  height: 600px;
+  background-color: bisque;
+  margin: 20px 0 10px 0;
+  padding: 30px;
+  line-height: 25px;
+  overflow: auto;
+  word-wrap: break-word;
 }
 h1{
   padding: 20px;
@@ -9,5 +19,9 @@ h1{
 
 .text-box{
   padding: 20px;
-  background-color: bisque;
+  background-color: navajowhite;
+}
+.check{
+  text-align: center;
+  margin: auto;
 }

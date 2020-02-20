@@ -2,18 +2,23 @@
 
 {% block saturs %}
 
-<h1>⌘ RVT tērzētava</h1>
-<hr />
-
-<div id="chats" class="saraksts">
+<div class="container-fluid">
+    <h1>⌘ RVT tērzētava</h1>
 </div>
 
-<hr />
+
+<div class="container">
+    <div id="chats" class="saraksts">
+
+    </div>
 
 
-<div class="text-box">
-    <input id="zinja" placeholder="Raksti šeit" type="text">
-    <button onClick="suutiZinju();" type="button">Sūtīt</button>
+    <div class="input-group text-box">
+        <input id="zinja" type="text" class="form-control" placeholder="Raksti šeit...">
+        <div class="input-group-append">
+        <button onclick="suutiZinju()" class="btn btn-primary" type="button">Sūtīt</button>  
+        </div>
+    </div>
 </div>
 
 
